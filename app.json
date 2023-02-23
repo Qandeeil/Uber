@@ -1,10 +1,11 @@
 {
   "expo": {
-    "name": "Uber-Clone",
+    "name": "Uber",
     "slug": "Uber-Clone",
+    "description": "This is an Uber clone",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/ImageApp.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
