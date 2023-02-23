@@ -1,4 +1,4 @@
-import { KeyboardAvoidingView, StyleSheet } from "react-native";
+import { KeyboardAvoidingView, Platform, StyleSheet } from "react-native";
 import HomeScreen from "./src/screens/HomeScreen";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
@@ -16,6 +16,8 @@ export default function App() {
       <NavigationContainer>
         <KeyboardAvoidingView
           style={{flex: 1}}
+          behavior={Platform.OS === "ios" ? "padding" : "height"}
+          keyboardVerticalOffset={Platform.OS === "ios" ? -64 : 0}
         >
           <stack.Navigator>
             <stack.Screen name="Home" component={HomeScreen} />

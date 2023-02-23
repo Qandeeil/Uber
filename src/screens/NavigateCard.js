@@ -9,7 +9,6 @@ import { useNavigation } from "@react-navigation/native";
 import NavFavourites from "../components/NavFavourites";
 import Icon from "react-native-vector-icons/FontAwesome5";
 import Ionicons from "react-native-vector-icons/Ionicons";
-import RideOptionCard from "./RideOptionCard";
 
 const NavigateCard = () => {
   const dispatch = useDispatch();
